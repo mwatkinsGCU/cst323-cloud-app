@@ -43,25 +43,3 @@ git commit -m "Initial commit - CST-323 Cloud Test Application"
 git remote add origin https://github.com/YOUR_USERNAME/cst323-cloud-app.git
 git push -u origin main
 ```
-
-
-```Mermaid
-erDiagram
-    CATEGORIES {
-        bigint   id           PK
-        varchar  name
-        varchar  description
-        datetime created_at
-    }
-    PRODUCTS {
-        bigint   id           PK
-        bigint   category_id  FK
-        varchar  name
-        varchar  description
-        int      quantity
-        decimal  price
-        datetime created_at
-    }
-    CATEGORIES ||--o{ PRODUCTS : "has"
-
-```
